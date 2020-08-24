@@ -21,7 +21,7 @@
                     <input type="text" placeholder="Search..">
                   </div>
               </div>
-             
+             <div class='scroll1'>
               <div class="contact">
               <div class="row">
                 <div class="col">
@@ -31,77 +31,8 @@
                   <h4 class="mt-2">Alka Rani</h4>
                 </div>
             </div>
-            </div>
-            <div class="contact">
-              <div class="row">
-                <div class="col">
-                  <img class="img" src="https://res.cloudinary.com/primaryplus/image/upload/v1588768696/iconfinder_girl_avatar_child_kid_4043250_o7qowx.png" alt="">
-                </div>
-                <div class="col mt-2">
-                  <h4 class="mt-2">Alka Rani</h4>
-                </div>
-            </div>
-            </div>
-            <div class="contact">
-              <div class="row">
-                <div class="col">
-                  <img class="img" src="https://res.cloudinary.com/primaryplus/image/upload/v1588768696/iconfinder_girl_avatar_child_kid_4043250_o7qowx.png" alt="">
-                </div>
-                <div class="col mt-2">
-                  <h4 class="mt-2">Alka Rani</h4>
-                </div>
-            </div>
-            </div>
-            <div class="contact">
-              <div class="row">
-                <div class="col">
-                  <img class="img" src="https://res.cloudinary.com/primaryplus/image/upload/v1588768696/iconfinder_girl_avatar_child_kid_4043250_o7qowx.png" alt="">
-                </div>
-                <div class="col mt-2">
-                  <h4 class="mt-2">Alka Rani</h4>
-                </div>
-            </div>
-            </div>
-            <div class="contact">
-              <div class="row">
-                <div class="col">
-                  <img class="img" src="https://res.cloudinary.com/primaryplus/image/upload/v1588768696/iconfinder_girl_avatar_child_kid_4043250_o7qowx.png" alt="">
-                </div>
-                <div class="col mt-2">
-                  <h4 class="mt-2">Alka Rani</h4>
-                </div>
-            </div>
-            </div>
-            <div class="contact">
-              <div class="row">
-                <div class="col">
-                  <img class="img" src="https://res.cloudinary.com/primaryplus/image/upload/v1588768696/iconfinder_girl_avatar_child_kid_4043250_o7qowx.png" alt="">
-                </div>
-                <div class="col mt-2">
-                  <h4 class="mt-2">Alka Rani</h4>
-                </div>
-            </div>
-            </div>
-            <div class="contact">
-              <div class="row">
-                <div class="col">
-                  <img class="img" src="https://res.cloudinary.com/primaryplus/image/upload/v1588768696/iconfinder_girl_avatar_child_kid_4043250_o7qowx.png" alt="">
-                </div>
-                <div class="col mt-2">
-                  <h4 class="mt-2">Alka Rani</h4>
-                </div>
-            </div>
-            </div>
-            <div class="contact">
-              <div class="row">
-                <div class="col">
-                  <img class="img" src="https://res.cloudinary.com/primaryplus/image/upload/v1588768696/iconfinder_girl_avatar_child_kid_4043250_o7qowx.png" alt="">
-                </div>
-                <div class="col mt-2">
-                  <h4 class="mt-2">Alka Rani</h4>
-                </div>
-            </div>
-            </div>
+            </div>            
+          </div>
           </div>
             <div class="col"  style="border: 2px solid black;">
               <div class="row" style="border-bottom: 2px solid black;  background-color: #10B5B5; ">
@@ -115,19 +46,15 @@
           </div>
         
           <div class="scroll">
-              <h4 class="mt-4" id="msg">Hi ! How are you?</h4>
-              <h4 class="mt-4" id="msg1">I am fine. what about you?</h4>
-              <h4 class="mt-4" id="msg">Hi ! How are you?</h4>
-              <h4 class="mt-4" id="msg1">I am fine. what about you?</h4>
-              <h4 class="mt-4" id="msg">Hi ! How are you?</h4>
-              <h4 class="mt-4" id="msg1">I am fine. what about you?</h4>
+              <h5 class="mt-4" id="msg">Hi ! How are you?</h5>             
             </div>
+            <form action="" method="POST">
               <div class="input-container">
-                <input class="input-field" type="text" placeholder="Type your messages here..." name="">
-                <i class="fas fa-paper-plane icon"></i>
+                <input class="input-field" type="text" placeholder="Type your messages here..." name="message">
+               <button class="submit"><img src="https://img.icons8.com/color/43/000000/filled-sent.png"/></button>
               </div>
-
-  
+              {%csrf_token%}
+            </form>  
     </div>
   </div>
 </body>
